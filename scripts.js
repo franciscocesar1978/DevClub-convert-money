@@ -47,7 +47,7 @@ const convertValues = async () => {
         }).format(inputCurrencyValue / libra);
     }
 
-    if (currencySelect.value == "bitcoin") { //Se o select estiver selecionado o valor de bitcoin, entre aqui
+    if (currencySelect.value == "bitcoin") { 
         currencyValueConverted.innerHTML = new Intl.NumberFormat("ja-JP", {
             style: "currency",
             currency: "BTC",
