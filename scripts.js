@@ -69,7 +69,7 @@ function changeCurrency() {
 
     if (currencySelect.value == "euro") {
         currencyName.innerHTML = "Euro"
-        currencyImage.src = "./assets/euro.png"
+        currencyImage.src = "./assets/Euro.png"
     }
 
 
