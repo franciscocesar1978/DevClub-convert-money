@@ -3,25 +3,41 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
-    outline: none;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 18px;
 }
 
 body {
-    background-color: #8A51FC;
+    background-image: linear-gradient(to right,rgb(10, 116, 148),blue,indigo); ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
 
-.logo {
-    width: 300px;
-    display: block;
-    margin: 20px auto;
+.container {
+    width: 375px;
+    background-color: #F4F4F4;
+}
+
+header {
+    background-color: #1b83e2;
+    height: 66px;
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+h1 {
+    font-size: 24px;
+    color: #f4f4f4;
+
 }
 
 main {
-    width: 375px;
-    border-radius: 20px;
-    background: #F4F4F4;
-    margin: 0 auto 40px;
-    padding: 44px 24px 23px; 
+    padding: 24px;
+ 
 }
 
 label {
@@ -30,31 +46,46 @@ label {
     font-size: 14px;
 }
 
-select,
+select {
+    background: #FFFFFF;
+    border: 1px solid #BBBBBB;
+    border-radius: 4px;
+    height: 48px;
+    width: 100%;
+    display: block;
+    cursor: pointer;
+    outline: none;
+    appearance: none;
+    padding-left: 16px;
+    box-shadow: 2px 2px 5px  rgba(0, 0, 0, 0.15);
+    margin-top: 6px;
+    margin-bottom: 24px;
+
+}
 input {
     background: #FFFFFF;
     border: 1px solid #BBBBBB;
     border-radius: 4px;
     height: 48px;
     width: 100%;
-    margin-bottom: 24px;
-    appearance: none;
-    padding-left: 18px;
-    font-weight: 700px;
-    font-size: 16px;
-    color: #555555;
-    box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.15);
+    display: block;
+    outline: none;
+    padding-left: 16px;
+    font-size: 19px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.15);
 }
 
-button { 
-    background: #772FD3;
-    border-radius: 5px;
+button {
+    background: #1b83e2;
+    border-radius: 25px;
     width: 100%;
     border: none;
     height: 48px;
-    font-weight: 700;
+    font-weight: bold;
     font-size: 18px;
-    color: #ffffff;
+    color: #f4f4f4;
+    margin-top: 24px;
+    margin-bottom: 36px;
     cursor: pointer;
 }
 
@@ -68,36 +99,32 @@ button:active {
 }
 
 section {
-    border-radius: 20px;
-    border: 1px solid #772FD3;
-    margin-top: 36px;
-    padding: 12px;
-
+    border-radius: 10px;
+    border: 1px solid #1b83e2;
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 15px;
 
-}
-
-.arrow-img {
-   margin: 15px 0;
 }
 
 .currency-box {
+    padding: 18px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 4px;  
+    gap: 2px;
+
 }
 
 .currency {
     color: #777777;
     font-size: 14px;
-   
+
 }
 
-.currency-value, currency-value-to-convert {
-    color: #555555;
-    font-weight: 700px;
+.currency-value {
+    color: #1b83e2;
+    font-weight: bold;
     font-size: 20px;
 }
